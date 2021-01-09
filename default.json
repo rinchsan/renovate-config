@@ -1,0 +1,27 @@
+{
+  "extends": [
+    ":autodetectPinVersions",
+    ":automergeDisabled",
+    ":combinePatchMinorReleases",
+    ":dependencyDashboard",
+    ":disableRateLimiting",
+    ":docker",
+    ":enableRenovate",
+    ":enableVulnerabilityAlerts",
+    ":gomod",
+    ":ignoreModulesAndTests",
+    ":ignoreUnstable",
+    ":noUnscheduledUpdates",
+    ":prImmediately",
+    ":semanticPrefixFixDepsChoreOthers",
+    ":separateMultipleMajorReleases",
+    ":updateNotScheduled",
+    "group:monorepos",
+    "group:recommended",
+    "helpers:disableTypesNodeMajor",
+    "preview:dockerCompose",
+    "workarounds:all",
+    "github>rinchsan/renovate-config:schedule",
+    "github>rinchsan/renovate-config:postUpdateOptions"
+  ]
+}
