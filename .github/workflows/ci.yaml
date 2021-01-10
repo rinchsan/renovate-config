@@ -15,18 +15,5 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Setup node
-        uses: actions/setup-node@v2
-        with:
-          node-version: '12'
       - name: Validate config
-        env:
-          RENOVATE_JSON: renovate.json
-        run: |
-          for FILE in *.json
-          do
-            echo "Validating ${FILE} ..."
-            cp ${FILE} ${RENOVATE_JSON}
-            npx --package renovate -c 'renovate-config-validator'
-            rm ${RENOVATE_JSON}
-          done
+        uses: rinchsan/renovate-config-validator@v0.0.0
