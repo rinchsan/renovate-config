@@ -3,7 +3,6 @@
     ":autodetectPinVersions",
     ":automergeDisabled",
     ":combinePatchMinorReleases",
-    ":dependencyDashboard",
     ":disableRateLimiting",
     ":docker",
     ":enableRenovate",
