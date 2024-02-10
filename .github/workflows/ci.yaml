@@ -16,4 +16,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Validate config
-        uses: rinchsan/renovate-config-validator@v0.0.8
+        uses: rinchsan/renovate-config-validator@v0.2.0
